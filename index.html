@@ -78,6 +78,9 @@
           url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
 
+      /* Utilitários para SVG */
+      .fill-charcoal { fill: hsl(0 0% 15%); }
+
       @keyframes fadeUp {
         from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
@@ -121,6 +124,7 @@
         <nav class="hidden lg:flex items-center gap-10">
           <a href="#inicio" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Início</a>
           <a href="#sobre" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Sobre</a>
+          <a href="#proposta" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Proposta</a>
           <a href="#valores" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Valores</a>
           <a href="#areas" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Áreas de Atuação</a>
           <a href="#contato" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Contato</a>
@@ -135,6 +139,7 @@
         <nav class="container mx-auto px-6 py-6 flex flex-col gap-4">
           <a href="#inicio" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Início</a>
           <a href="#sobre" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Sobre</a>
+          <a href="#proposta" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Proposta</a>
           <a href="#valores" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Valores</a>
           <a href="#areas" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Áreas de Atuação</a>
           <a href="#contato" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Contato</a>
@@ -207,13 +212,60 @@
         </div>
       </section>
 
-      <div class="relative z-20">
-        <div class="h-1 w-full bg-gold/50"></div>
-        <div class="h-1 w-full bg-gold mt-[2px]"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gold rotate-45 shadow-lg border-2 border-gray-100"></div>
-      </div>
+      <section id="proposta" class="py-24 bg-gray-300 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 0 0 0 1200 0z" class="fill-charcoal"></path>
+            </svg>
+        </div>
 
-      <section id="valores" class="py-24 lg:py-32 bg-worked-gray relative">
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 pt-12">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center opacity-0 animate-fade-up">
+                    <img src="assets/logo.png" alt="Colonhesi Logo Grande" class="w-64 h-64 md:w-96 md:h-96 object-contain drop-shadow-2xl" />
+                </div>
+
+                <div class="opacity-0 animate-slide-in-right animation-delay-200">
+                    <span class="text-sm font-medium tracking-widest uppercase text-charcoal/70 mb-2 block">Nossa Proposta</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-medium text-charcoal mb-6">
+                        Proposta de Valor Única
+                    </h2>
+                    <p class="text-charcoal/80 text-lg leading-relaxed mb-8">
+                        Destacamo-nos pela nossa abordagem personalizada e pelo compromisso em oferecer resultados excepcionais aos nossos clientes.
+                    </p>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div class="bg-green-500 rounded-full p-1 shadow-sm">
+                                <i data-lucide="check" class="w-4 h-4 text-white font-bold"></i>
+                            </div>
+                            <span class="text-charcoal font-medium text-lg">Atendimento Personalizado</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-green-500 rounded-full p-1 shadow-sm">
+                                <i data-lucide="check" class="w-4 h-4 text-white font-bold"></i>
+                            </div>
+                            <span class="text-charcoal font-medium text-lg">Excelência Profissional</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-green-500 rounded-full p-1 shadow-sm">
+                                <i data-lucide="check" class="w-4 h-4 text-white font-bold"></i>
+                            </div>
+                            <span class="text-charcoal font-medium text-lg">Compromisso Ético</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0 0L1200 120 0 120z" class="fill-charcoal"></path>
+            </svg>
+        </div>
+      </section>
+
+      <section id="valores" class="py-24 lg:py-32 bg-worked-gray relative pt-32">
         <div class="container mx-auto px-6 lg:px-12">
           <div class="text-center mb-16">
              <span class="text-sm font-medium tracking-widest uppercase text-charcoal mb-4 block opacity-0 animate-fade-up">Nossos Valores</span>
