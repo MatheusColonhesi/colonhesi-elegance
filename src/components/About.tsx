@@ -1,4 +1,5 @@
 import { Scale, Users, Award, Shield } from "lucide-react";
+import advogadaImg from "@/assets/advogada.jpg";
 
 const About = () => {
   const values = [
@@ -32,10 +33,10 @@ const About = () => {
           {/* Left column - Attorney Photo */}
           <div className="opacity-0 animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
-              <div className="aspect-[4/5] bg-secondary overflow-hidden">
+              <div className="aspect-square bg-secondary overflow-hidden">
                 <img
-                  src="/placeholder.svg"
-                  alt="Advogado Colonhesi"
+                  src={advogadaImg}
+                  alt="Advogada Colonhesi"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
