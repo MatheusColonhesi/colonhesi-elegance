@@ -70,7 +70,6 @@
         --radius: 0.25rem;
       }
 
-      /* Animações */
       @keyframes fadeUp {
         from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
@@ -88,14 +87,12 @@
         to { opacity: 1; transform: translateX(0); }
       }
 
-      /* Utilitários de atraso de animação */
       .animation-delay-200 { animation-delay: 200ms; }
       .animation-delay-300 { animation-delay: 300ms; }
       .animation-delay-400 { animation-delay: 400ms; }
       .animation-delay-600 { animation-delay: 600ms; }
       .animation-delay-800 { animation-delay: 800ms; }
       
-      /* Inicialmente invisível para animação */
       .opacity-0 { opacity: 0; }
     </style>
 
@@ -107,7 +104,7 @@
     <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-background/95 backdrop-blur-md py-6">
       <div class="container mx-auto px-6 lg:px-12 flex items-center justify-between">
         <a href="#inicio" class="flex items-center gap-3 group">
-          <img src="src/assets/logo.png" alt="Colonhesi Advocacia" class="h-12 w-12 transition-transform duration-300 group-hover:scale-105" />
+          <img src="assets/logo.png" alt="Colonhesi Advocacia" class="h-12 w-12 transition-transform duration-300 group-hover:scale-105" />
           <span class="font-serif text-xl font-medium tracking-wide text-foreground hidden sm:block">
             Colonhesi Advocacia
           </span>
@@ -138,12 +135,12 @@
     <main class="overflow-hidden">
       
       <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('src/assets/hero-bg.jpg');"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/hero-bg.jpg');"></div>
         <div class="absolute inset-0 bg-charcoal/70"></div>
 
         <div class="relative z-10 container mx-auto px-6 lg:px-12 text-center">
           <div class="opacity-0 animate-fade-up">
-            <img src="src/assets/logo.png" alt="Colonhesi Advocacia" class="h-24 w-24 mx-auto mb-8 drop-shadow-2xl" />
+            <img src="assets/logo.png" alt="Colonhesi Advocacia" class="h-24 w-24 mx-auto mb-8 drop-shadow-2xl" />
           </div>
 
           <h1 class="opacity-0 animate-fade-up animation-delay-200 font-serif text-4xl md:text-5xl lg:text-7xl font-medium text-primary-foreground tracking-tight mb-6">
@@ -173,7 +170,7 @@
             <div class="opacity-0 animate-slide-in-left animation-delay-200">
               <div class="relative">
                 <div class="aspect-square bg-secondary overflow-hidden">
-                  <img src="src/assets/advogada.jpg" alt="Advogada Colonhesi" class="w-full h-full object-cover" />
+                  <img src="assets/advogada.jpg" alt="Advogada Colonhesi" class="w-full h-full object-cover" />
                 </div>
                 <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold -z-10"></div>
               </div>
@@ -247,24 +244,6 @@
               <i data-lucide="briefcase" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Trabalhista</h3>
               <p class="text-muted-foreground text-sm leading-relaxed">Defesa dos direitos de trabalhadores e empresas em todas as instâncias.</p>
-            </div>
-            <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.6s;">
-              <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
-              <i data-lucide="file-text" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
-              <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Civil</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Contratos, responsabilidade civil, cobranças e demais questões do cotidiano jurídico.</p>
-            </div>
-            <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.7s;">
-              <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
-              <i data-lucide="home" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
-              <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Imobiliário</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Compra, venda, locação e regularização de imóveis com segurança jurídica.</p>
-            </div>
-            <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.8s;">
-              <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
-              <i data-lucide="gavel" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
-              <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito do Consumidor</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Proteção e defesa dos direitos nas relações de consumo.</p>
             </div>
           </div>
         </div>
@@ -346,7 +325,7 @@
       <div class="container mx-auto px-6 lg:px-12">
         <div class="flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-3">
-            <img src="src/assets/logo.png" alt="Colonhesi Advocacia" class="h-10 w-10" />
+            <img src="assets/logo.png" alt="Colonhesi Advocacia" class="h-10 w-10" />
             <span class="font-serif text-lg text-background">Colonhesi Advocacia</span>
           </div>
           <p class="text-stone text-sm text-center md:text-right">
@@ -371,12 +350,10 @@
         if (isMenuOpen) {
           mobileMenu.classList.remove('opacity-0', 'invisible');
           mobileMenu.classList.add('opacity-100', 'visible');
-          // Troca ícone para X
           mobileBtn.innerHTML = '<i data-lucide="x" class="w-6 h-6"></i>';
         } else {
           mobileMenu.classList.add('opacity-0', 'invisible');
           mobileMenu.classList.remove('opacity-100', 'visible');
-          // Troca ícone para Menu
           mobileBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
         }
         lucide.createIcons();
