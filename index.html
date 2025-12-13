@@ -70,23 +70,12 @@
         --radius: 0.25rem;
       }
 
-      /* Background Cinza Trabalhado */
+      /* Background Cinza Trabalhado (Sutil) */
       .bg-worked-gray {
-        background-color: #e5e7eb;
-        background-image: linear-gradient(to bottom right, rgba(255,255,255,0.5), rgba(0,0,0,0.05));
-      }
-
-      /* Cores de preenchimento para as molduras SVG */
-      .fill-white { fill: #ffffff; }
-      .fill-worked-gray { fill: #e5e7eb; } /* Cor base do worked-gray */
-      .fill-charcoal { fill: hsl(0 0% 15%); }
-      .fill-foreground { fill: hsl(0 0% 8%); }
-
-      /* Borda dourada da moldura */
-      .stroke-gold {
-        stroke: hsl(40 45% 55%);
-        stroke-width: 2px;
-        fill: none;
+        background-color: #f3f4f6;
+        background-image: 
+          linear-gradient(to bottom, transparent, rgba(0,0,0,0.02) 100%),
+          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
 
       @keyframes fadeUp {
@@ -155,7 +144,7 @@
 
     <main class="overflow-hidden">
       
-      <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pb-32">
+      <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pb-12">
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/hero-bg.jpg');"></div>
         <div class="absolute inset-0 bg-charcoal/70"></div>
 
@@ -181,24 +170,23 @@
             <i data-lucide="arrow-down" class="w-4 h-4 animate-bounce"></i>
           </a>
         </div>
-
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px]">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-white"></path>
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35" class="stroke-gold"></path>
-          </svg>
-        </div>
       </section>
 
+      <div class="relative z-20">
+        <div class="h-1 w-full bg-gold"></div>
+        <div class="h-1 w-full bg-gold/50 mt-[2px]"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gold rotate-45 shadow-lg border-2 border-white"></div>
+      </div>
+
       <section id="sobre" class="py-24 lg:py-32 bg-background relative">
-        <div class="container mx-auto px-6 lg:px-12 mb-20">
+        <div class="container mx-auto px-6 lg:px-12">
           <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div class="opacity-0 animate-slide-in-left animation-delay-200">
               <div class="relative">
-                <div class="aspect-square bg-secondary overflow-hidden">
+                <div class="aspect-square bg-secondary overflow-hidden shadow-2xl border-4 border-white">
                   <img src="assets/advogada.jpg" alt="Advogada Colonhesi" class="w-full h-full object-cover" />
                 </div>
-                <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold -z-10"></div>
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-gold -z-10"></div>
               </div>
             </div>
 
@@ -217,17 +205,16 @@
             </div>
           </div>
         </div>
-
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px] transform scale-x-[-1]">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-worked-gray"></path>
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35" class="stroke-gold"></path>
-          </svg>
-        </div>
       </section>
 
+      <div class="relative z-20">
+        <div class="h-1 w-full bg-gold/50"></div>
+        <div class="h-1 w-full bg-gold mt-[2px]"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gold rotate-45 shadow-lg border-2 border-gray-100"></div>
+      </div>
+
       <section id="valores" class="py-24 lg:py-32 bg-worked-gray relative">
-        <div class="container mx-auto px-6 lg:px-12 mb-20">
+        <div class="container mx-auto px-6 lg:px-12">
           <div class="text-center mb-16">
              <span class="text-sm font-medium tracking-widest uppercase text-charcoal mb-4 block opacity-0 animate-fade-up">Nossos Valores</span>
              <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal mb-6 opacity-0 animate-fade-up animation-delay-200">
@@ -237,34 +224,33 @@
           </div>
 
           <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-lg text-center" style="animation-delay: 0.4s;">
+            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-sm border-t-4 border-gold text-center" style="animation-delay: 0.4s;">
               <i data-lucide="heart-handshake" class="h-10 w-10 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-4">Compromisso Personalizado</h3>
               <p class="text-muted-foreground text-sm leading-relaxed">Nosso compromisso é oferecer um atendimento personalizado, entendendo as necessidades individuais de cada cliente.</p>
             </div>
-            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-lg text-center" style="animation-delay: 0.55s;">
+            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-sm border-t-4 border-gold text-center" style="animation-delay: 0.55s;">
               <i data-lucide="book-open-check" class="h-10 w-10 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-4">Conhecimento Profundo</h3>
               <p class="text-muted-foreground text-sm leading-relaxed">Baseamos nossa advocacia em um profundo conhecimento jurídico para garantir soluções eficazes e confiáveis.</p>
             </div>
-            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-lg text-center" style="animation-delay: 0.7s;">
+            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-sm border-t-4 border-gold text-center" style="animation-delay: 0.7s;">
               <i data-lucide="shield-check" class="h-10 w-10 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-4">Referência Confiável</h3>
               <p class="text-muted-foreground text-sm leading-relaxed">Somos reconhecidos por ser uma referência confiável para quem busca excelência em assistência jurídica.</p>
             </div>
           </div>
         </div>
-
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px]">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-white"></path>
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35" class="stroke-gold"></path>
-          </svg>
-        </div>
       </section>
 
+      <div class="relative z-20">
+        <div class="h-1 w-full bg-gold"></div>
+        <div class="h-1 w-full bg-gold/50 mt-[2px]"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gold rotate-45 shadow-lg border-2 border-white"></div>
+      </div>
+
       <section id="areas" class="py-24 lg:py-32 bg-background relative">
-        <div class="container mx-auto px-6 lg:px-12 mb-20">
+        <div class="container mx-auto px-6 lg:px-12">
           <div class="text-center mb-16">
             <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">Nossos Serviços</span>
             <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
@@ -274,19 +260,19 @@
           </div>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.3s;">
+            <div class="opacity-0 animate-fade-up group relative bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-gray-100" style="animation-delay: 0.3s;">
               <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
               <i data-lucide="building-2" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito de Família e Sucessões</h3>
               <p class="text-muted-foreground text-sm leading-relaxed">Soluções jurídicas completas para direito de família e sucessões. Garantimos seus direitos e promovemos a justiça nas relações pessoais.</p>
             </div>
-            <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.4s;">
+            <div class="opacity-0 animate-fade-up group relative bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-gray-100" style="animation-delay: 0.4s;">
               <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
               <i data-lucide="scale" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Penal</h3>
               <p class="text-muted-foreground text-sm leading-relaxed">Defesa e orientação jurídica em processos criminais, assegurando uma representação robusta, confiável e comprometida com a justiça.</p>
             </div>
-            <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.5s;">
+            <div class="opacity-0 animate-fade-up group relative bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-gray-100" style="animation-delay: 0.5s;">
               <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
               <i data-lucide="monitor-smartphone" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Digital</h3>
@@ -294,17 +280,16 @@
             </div>
           </div>
         </div>
-
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px] transform scale-x-[-1]">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-charcoal"></path>
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35" class="stroke-gold"></path>
-          </svg>
-        </div>
       </section>
 
+      <div class="relative z-20">
+        <div class="h-1 w-full bg-gold/50"></div>
+        <div class="h-1 w-full bg-gold mt-[2px]"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gold rotate-45 shadow-lg border-2 border-charcoal"></div>
+      </div>
+
       <section id="contato" class="py-24 lg:py-32 bg-charcoal relative">
-        <div class="container mx-auto px-6 lg:px-12 mb-20">
+        <div class="container mx-auto px-6 lg:px-12">
           <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
             <div>
               <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">Contato</span>
@@ -342,7 +327,7 @@
             </div>
 
             <div class="opacity-0 animate-slide-in-right" style="animation-delay: 0.4s;">
-              <form class="bg-charcoal-light/50 p-8 lg:p-10 border border-stone/20">
+              <form class="bg-charcoal-light/50 p-8 lg:p-10 border border-stone/20 shadow-2xl">
                 <h3 class="font-serif text-2xl text-primary-foreground mb-6">Envie sua mensagem</h3>
                 
                 <div class="space-y-6">
@@ -362,7 +347,7 @@
                     <label class="block text-sm font-medium text-stone-light mb-2">Mensagem</label>
                     <textarea rows="4" class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors resize-none" placeholder="Como podemos ajudar?"></textarea>
                   </div>
-                  <button type="submit" class="w-full bg-gold hover:bg-gold-light text-charcoal font-medium py-4 tracking-wide transition-colors duration-300">
+                  <button type="submit" class="w-full bg-gold hover:bg-gold-light text-charcoal font-medium py-4 tracking-wide transition-colors duration-300 shadow-lg">
                     Enviar Mensagem
                   </button>
                 </div>
@@ -370,17 +355,10 @@
             </div>
           </div>
         </div>
-
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px]">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-foreground"></path>
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35" class="stroke-gold"></path>
-          </svg>
-        </div>
       </section>
     </main>
 
-    <footer class="bg-foreground py-12">
+    <footer class="bg-foreground py-12 border-t border-stone/20">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-3">
