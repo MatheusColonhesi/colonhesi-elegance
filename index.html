@@ -70,13 +70,6 @@
         --radius: 0.25rem;
       }
 
-      /* Classe para o fundo cinza trabalhado */
-      .bg-worked-gray {
-        background-color: #e5e7eb; /* Base cinza */
-        background-image: 
-          linear-gradient(to bottom right, rgba(255,255,255,0.5), rgba(0,0,0,0.05));
-      }
-
       @keyframes fadeUp {
         from { opacity: 0; transform: translateY(30px); }
         to { opacity: 1; transform: translateY(0); }
@@ -120,7 +113,6 @@
         <nav class="hidden lg:flex items-center gap-10">
           <a href="#inicio" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Início</a>
           <a href="#sobre" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Sobre</a>
-          <a href="#valores" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Valores</a>
           <a href="#areas" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Áreas de Atuação</a>
           <a href="#contato" class="text-sm font-medium tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Contato</a>
         </nav>
@@ -134,7 +126,6 @@
         <nav class="container mx-auto px-6 py-6 flex flex-col gap-4">
           <a href="#inicio" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Início</a>
           <a href="#sobre" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Sobre</a>
-          <a href="#valores" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Valores</a>
           <a href="#areas" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Áreas de Atuação</a>
           <a href="#contato" class="mobile-link text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2">Contato</a>
         </nav>
@@ -175,7 +166,7 @@
 
       <section id="sobre" class="py-24 lg:py-32 bg-background">
         <div class="container mx-auto px-6 lg:px-12">
-          <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-20">
             <div class="opacity-0 animate-slide-in-left animation-delay-200">
               <div class="relative">
                 <div class="aspect-square bg-secondary overflow-hidden">
@@ -186,58 +177,51 @@
             </div>
 
             <div class="opacity-0 animate-slide-in-right animation-delay-300">
-              <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block">Nossa História</span>
+              <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block">Sobre Nós</span>
               <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 leading-tight">
-                Conheça Nossa Fundadora
+                Tradição e modernidade na advocacia
               </h2>
               <div class="w-16 h-[1px] bg-gold mb-8"></div>
               <p class="text-muted-foreground text-lg leading-relaxed mb-6">
-                Dra. Gabriela Colonhesi é mais do que uma advogada, ela é uma defensora incansável da justiça e uma profissional comprometida com a ética e a transparência.
+                O escritório Colonhesi Advocacia nasceu da paixão pelo Direito e do compromisso inabalável com a justiça. Com anos de experiência e uma equipe altamente qualificada, oferecemos soluções jurídicas eficientes e personalizadas.
               </p>
               <p class="text-muted-foreground text-lg leading-relaxed">
-                Com vasta experiência e conhecimento especializado, oferecemos serviços jurídicos de excelência em Direito de Família e Sucessões, Direito Penal e Direito Digital. Nossa equipe é composta por profissionais dedicados em fornecer assistência jurídica de confiança.
+                Nossa missão é representar os interesses de nossos clientes com excelência, ética e dedicação, sempre buscando os melhores resultados em cada caso.
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section id="valores" class="py-24 lg:py-32 bg-worked-gray">
-        <div class="container mx-auto px-6 lg:px-12">
-          <div class="text-center mb-16">
-             <span class="text-sm font-medium tracking-widest uppercase text-charcoal mb-4 block opacity-0 animate-fade-up">Nossos Valores</span>
-             <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal mb-6 opacity-0 animate-fade-up animation-delay-200">
-                O Que Nos Faz Únicos
-             </h2>
-             <div class="w-16 h-[1px] bg-gold mx-auto opacity-0 animate-fade-up animation-delay-400"></div>
-          </div>
-
-          <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-lg text-center" style="animation-delay: 0.4s;">
-              <i data-lucide="heart-handshake" class="h-10 w-10 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
-              <h3 class="font-serif text-xl font-medium text-foreground mb-4">Compromisso Personalizado</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Nosso compromisso é oferecer um atendimento personalizado, entendendo as necessidades individuais de cada cliente.</p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="opacity-0 animate-fade-up group p-6 bg-secondary/50 hover:bg-secondary transition-colors duration-300" style="animation-delay: 0.4s;">
+              <i data-lucide="scale" class="h-8 w-8 text-gold mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+              <h3 class="font-serif text-xl font-medium text-foreground mb-2">Ética</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">Conduta pautada pelos mais altos padrões de integridade profissional.</p>
             </div>
-            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-lg text-center" style="animation-delay: 0.55s;">
-              <i data-lucide="book-open-check" class="h-10 w-10 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
-              <h3 class="font-serif text-xl font-medium text-foreground mb-4">Conhecimento Profundo</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Baseamos nossa advocacia em um profundo conhecimento jurídico para garantir soluções eficazes e confiáveis.</p>
+            <div class="opacity-0 animate-fade-up group p-6 bg-secondary/50 hover:bg-secondary transition-colors duration-300" style="animation-delay: 0.55s;">
+              <i data-lucide="users" class="h-8 w-8 text-gold mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+              <h3 class="font-serif text-xl font-medium text-foreground mb-2">Dedicação</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">Atendimento personalizado com foco nas necessidades de cada cliente.</p>
             </div>
-            <div class="opacity-0 animate-fade-up bg-white p-8 shadow-card hover:shadow-elegant transition-all duration-300 rounded-lg text-center" style="animation-delay: 0.7s;">
-              <i data-lucide="shield-check" class="h-10 w-10 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
-              <h3 class="font-serif text-xl font-medium text-foreground mb-4">Referência Confiável</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Somos reconhecidos por ser uma referência confiável para quem busca excelência em assistência jurídica.</p>
+            <div class="opacity-0 animate-fade-up group p-6 bg-secondary/50 hover:bg-secondary transition-colors duration-300" style="animation-delay: 0.7s;">
+              <i data-lucide="award" class="h-8 w-8 text-gold mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+              <h3 class="font-serif text-xl font-medium text-foreground mb-2">Excelência</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">Busca constante pela qualidade e resultados excepcionais.</p>
+            </div>
+            <div class="opacity-0 animate-fade-up group p-6 bg-secondary/50 hover:bg-secondary transition-colors duration-300" style="animation-delay: 0.85s;">
+              <i data-lucide="shield" class="h-8 w-8 text-gold mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+              <h3 class="font-serif text-xl font-medium text-foreground mb-2">Confiança</h3>
+              <p class="text-muted-foreground text-sm leading-relaxed">Relacionamentos duradouros baseados em transparência e respeito.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="areas" class="py-24 lg:py-32 bg-background">
+      <section id="areas" class="py-24 lg:py-32 bg-secondary/30">
         <div class="container mx-auto px-6 lg:px-12">
           <div class="text-center mb-16">
-            <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">Nossos Serviços</span>
+            <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">Áreas de Atuação</span>
             <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
-              Conheça Nossas Especialidades
+              Expertise jurídica completa
             </h2>
             <div class="w-16 h-[1px] bg-gold mx-auto opacity-0 animate-fade-up animation-delay-400"></div>
           </div>
@@ -247,84 +231,79 @@
               <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
               <i data-lucide="building-2" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito de Família e Sucessões</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Soluções jurídicas completas para direito de família e sucessões. Garantimos seus direitos e promovemos a justiça nas relações pessoais.</p>
+              <p class="text-muted-foreground text-sm leading-relaxed">Especializados em questões familiares e sucessórias, garantimos seus direitos e promovemos a justiça nas relações pessoais.</p>
             </div>
             <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.4s;">
               <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
-              <i data-lucide="scale" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
+              <i data-lucide="users" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Penal</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Defesa e orientação jurídica em processos criminais, assegurando uma representação robusta, confiável e comprometida com a justiça.</p>
+              <p class="text-muted-foreground text-sm leading-relaxed">Defesa e orientação jurídica em processos criminais, assegurando uma representação robusta e comprometida com a justiça.</p>
             </div>
             <div class="opacity-0 animate-fade-up group relative bg-background p-8 shadow-card hover:shadow-elegant transition-all duration-500 border border-border/50" style="animation-delay: 0.5s;">
               <div class="absolute top-0 left-0 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500"></div>
-              <i data-lucide="monitor-smartphone" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
+              <i data-lucide="briefcase" class="h-10 w-10 text-charcoal-light group-hover:text-gold mb-6 transition-colors duration-300"></i>
               <h3 class="font-serif text-xl font-medium text-foreground mb-3">Direito Digital</h3>
-              <p class="text-muted-foreground text-sm leading-relaxed">Especializados em recuperação de contas, invasões, incluindo indenização por danos morais e materiais nas relações online.</p>
+              <p class="text-muted-foreground text-sm leading-relaxed">Especializados em recuperação de contas, incluindo indenização por danos morais e indenização por danos materiais.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contato" class="py-24 lg:py-32 bg-worked-gray">
+      <section id="contato" class="py-24 lg:py-32 bg-charcoal">
         <div class="container mx-auto px-6 lg:px-12">
           <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
             <div>
-              <span class="text-sm font-medium tracking-widest uppercase text-charcoal mb-4 block opacity-0 animate-fade-up">Contato</span>
-              <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal mb-6 opacity-0 animate-fade-up animation-delay-200">
-                Fale com a Especialista
+              <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">Contato</span>
+              <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-primary-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
+                Entre em contato
               </h2>
               <div class="w-16 h-[1px] bg-gold mb-8 opacity-0 animate-fade-up animation-delay-400"></div>
-              <p class="text-charcoal/80 text-lg leading-relaxed mb-12 opacity-0 animate-fade-up animation-delay-600">
-                Com a comodidade do atendimento online, você recebe atendimento especializado à distância de um clique.
+              <p class="text-stone-light text-lg leading-relaxed mb-12 opacity-0 animate-fade-up animation-delay-600">
+                Estamos prontos para atendê-lo. Entre em contato para agendar uma consulta e conhecer como podemos ajudar no seu caso.
               </p>
 
               <div class="grid sm:grid-cols-2 gap-8">
-                <div class="opacity-0 animate-fade-up" style="animation-delay: 0.5s;">
-                  <i data-lucide="map-pin" class="h-6 w-6 text-gold mb-3"></i>
-                  <h3 class="font-serif text-lg font-medium text-charcoal mb-2">Localização</h3>
-                  <p class="text-charcoal/80 text-sm">Atendimento Online em todo o Brasil</p>
-                  <p class="text-charcoal/80 text-sm">Presencial em Curitiba/PR</p>
-                </div>
                 <div class="opacity-0 animate-fade-up" style="animation-delay: 0.6s;">
                   <i data-lucide="phone" class="h-6 w-6 text-gold mb-3"></i>
-                  <h3 class="font-serif text-lg font-medium text-charcoal mb-2">WhatsApp</h3>
-                  <p class="text-charcoal/80 text-sm">(41) 98529-2817</p>
+                  <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">Telefone</h3>
+                  <p class="text-stone-light text-sm">(41) 98529-2817</p>
                 </div>
                 <div class="opacity-0 animate-fade-up" style="animation-delay: 0.7s;">
                   <i data-lucide="mail" class="h-6 w-6 text-gold mb-3"></i>
-                  <h3 class="font-serif text-lg font-medium text-charcoal mb-2">E-mail</h3>
-                  <p class="text-charcoal/80 text-sm">adv.gabrielacolonhesi@gmail.com</p>
+                  <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">E-mail</h3>
+                  <p class="text-stone-light text-sm">adv.gabrielacolonhesi@gmail.com</p>
                 </div>
                 <div class="opacity-0 animate-fade-up" style="animation-delay: 0.8s;">
                   <i data-lucide="clock" class="h-6 w-6 text-gold mb-3"></i>
-                  <h3 class="font-serif text-lg font-medium text-charcoal mb-2">Atendimento</h3>
-                  <p class="text-charcoal/80 text-sm">Online e ágil</p>
+                  <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">Horário</h3>
+                  <p class="text-stone-light text-sm">Atendimento 24 horas</p>
+                  
                 </div>
               </div>
             </div>
 
             <div class="opacity-0 animate-slide-in-right" style="animation-delay: 0.4s;">
-              <form class="bg-white p-8 lg:p-10 border border-gray-200 shadow-lg rounded-lg">
-                <h3 class="font-serif text-2xl text-charcoal mb-6">Envie sua mensagem</h3>
+              <form class="bg-charcoal-light/50 p-8 lg:p-10 border border-stone/20">
+                <h3 class="font-serif text-2xl text-primary-foreground mb-6">Envie sua mensagem</h3>
                 
                 <div class="space-y-6">
                   <div>
-                    <label class="block text-sm font-medium text-charcoal/70 mb-2">Seu Nome</label>
-                    <input type="text" class="w-full bg-gray-50 border-b border-gray-300 focus:border-gold py-3 px-2 text-charcoal placeholder:text-gray-400 outline-none transition-colors rounded-t" placeholder="Digite seu nome" />
+                    <label class="block text-sm font-medium text-stone-light mb-2">Nome completo</label>
+                    <input type="text" class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors" placeholder="Seu nome" />
                   </div>
                   <div>
-                    <label class="block text-sm font-medium text-charcoal/70 mb-2">Seu E-mail</label>
-                    <input type="email" class="w-full bg-gray-50 border-b border-gray-300 focus:border-gold py-3 px-2 text-charcoal placeholder:text-gray-400 outline-none transition-colors rounded-t" placeholder="seu@email.com" />
+                    <label class="block text-sm font-medium text-stone-light mb-2">E-mail</label>
+                    <input type="email" class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors" placeholder="seu@email.com" />
                   </div>
                   <div>
-                    <label class="block text-sm font-medium text-charcoal/70 mb-2">Seu Cel/WhatsApp (com DDD)</label>
-                    <input type="tel" class="w-full bg-gray-50 border-b border-gray-300 focus:border-gold py-3 px-2 text-charcoal placeholder:text-gray-400 outline-none transition-colors rounded-t" placeholder="(41) 99999-9999" />
+                    <label class="block text-sm font-medium text-stone-light mb-2">Telefone</label>
+                    <input type="tel" class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors" placeholder="(00) 00000-0000" />
                   </div>
                   <div>
-                    <label class="block text-sm font-medium text-charcoal/70 mb-2">Mensagem</label>
-                    <textarea rows="4" class="w-full bg-gray-50 border-b border-gray-300 focus:border-gold py-3 px-2 text-charcoal placeholder:text-gray-400 outline-none transition-colors resize-none rounded-t" placeholder="Como podemos ajudar?"></textarea>
+                    <label class="block text-sm font-medium text-stone-light mb-2">Mensagem</label>
+                    <textarea rows="4" class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors resize-none" placeholder="Como podemos ajudar?"></textarea>
                   </div>
-                  <button type="submit" class="w-full bg-gold hover:bg-gold-light text-charcoal font-medium py-4 tracking-wide transition-colors duration-300 shadow-md">
+                  <button type="submit" class="w-full bg-gold hover:bg-gold-light text-charcoal font-medium py-4 tracking-wide transition-colors duration-300">
                     Enviar Mensagem
                   </button>
                 </div>
