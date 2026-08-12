@@ -458,6 +458,8 @@
 
     <section id="clientes" class="py-24 lg:py-32 bg-worked-gray relative">
       <div class="container mx-auto px-6 lg:px-12">
+
+        <!-- Cabeçalho -->
         <div class="text-center mb-16">
           <span
             class="text-sm font-medium tracking-widest uppercase text-charcoal mb-4 block opacity-0 animate-fade-up">Depoimentos</span>
@@ -468,47 +470,298 @@
           <div class="w-16 h-[1px] bg-gold mx-auto opacity-0 animate-fade-up animation-delay-400"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 shadow-card rounded-sm border-l-4 border-gold opacity-0 animate-fade-up"
-            style="animation-delay: 0.3s;">
-            <div class="flex text-gold mb-4">
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        <!-- Wrapper do Carrossel com Setas de Navegação -->
+        <div class="relative max-w-7xl mx-auto px-2 sm:px-10">
+
+          <!-- Seta Esquerda -->
+          <button id="prev-depoimento"
+            class="absolute -left-2 sm:left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gold hover:text-white text-charcoal p-3 rounded-full shadow-lg border border-gray-100 transition-all duration-300 focus:outline-none cursor-pointer"
+            aria-label="Avaliação Anterior">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Container dos Cards (3 Visíveis no Desktop) -->
+          <div id="depoimentos-container"
+            class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 px-1"
+            style="scrollbar-width: none; -ms-overflow-style: none;">
+
+            <!-- Card 1: Giovanna Luiza Andrade -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"A Dra. Gabriela é uma excelente
+                  profissional, muito atenciosa, competente e dedicada aos clientes. Sempre muito bom ser atendida por
+                  ela."
+                </p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Giovanna Luiza Andrade</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
             </div>
-            <p class="text-muted-foreground mb-6 italic">"Profissionalismo exemplar. A Dra. Gabriela conduziu meu caso
-              com uma atenção aos detalhes que me trouxe muita segurança."</p>
-            <div class="font-serif font-medium text-foreground">– Maria Silva</div>
-          </div>
-          <div class="bg-white p-8 shadow-card rounded-sm border-l-4 border-gold opacity-0 animate-fade-up"
-            style="animation-delay: 0.5s;">
-            <div class="flex text-gold mb-4">
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+
+            <!-- Card 2: Letícia Kleina -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"A Dra. Gabriela é uma profissional
+                  muito dedicada e competente, que atua sempre com diligência e cuidado! Ótima profissional!!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Letícia Kleina</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
             </div>
-            <p class="text-muted-foreground mb-6 italic">"Excelente atendimento e agilidade. Recomendo fortemente para
-              quem precisa de resolver questões jurídicas complexas."</p>
-            <div class="font-serif font-medium text-foreground">– João Oliveira</div>
-          </div>
-          <div class="bg-white p-8 shadow-card rounded-sm border-l-4 border-gold opacity-0 animate-fade-up"
-            style="animation-delay: 0.7s;">
-            <div class="flex text-gold mb-4">
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+
+            <!-- Card 3: Lívia Dantas -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Dra. Gabriela é uma excelente
+                  profissional, com vasto conhecimento jurídico, dedicação e atenção aos clientes. Se precisa de auxílio
+                  com
+                  algum processo, está no lugar certo!!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Lívia Dantas</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
             </div>
-            <p class="text-muted-foreground mb-6 italic">"Recuperaram minha conta social invadida em tempo recorde.
-              Muito grata pelo serviço de Direito Digital."</p>
-            <div class="font-serif font-medium text-foreground">– Ana Souza</div>
+
+            <!-- Card 4: Clarice Waronowski -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Gostaria de expressar meu profundo
+                  agradecimento pelo excepcional comprometimento, dedicação e suporte com o meu caso. É notável a
+                  excelência
+                  profissional e conhecimento jurídico que ela possui. Estou verdadeiramente grata por ter encontrado
+                  uma
+                  advogada tão competente para o meu processo."</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Clarice Waronowski</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 5: Marcos dos Santos -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Estive buscando diversas
+                  advocacias e
+                  a Dra Gabriela foi a única que demonstrou prontidão e interesse no caso apresentado, aparenta ter um
+                  ótimo
+                  conhecimento sobre o assunto, certamente é uma grande profissional admirável, logo no inicio do
+                  atendimento percebe-se o que o tratamento com o cliente é excelente, demonstram colher as informações
+                  necessárias, sanar suas dúvidas e lhe aconselhar da melhor forma possível, são dignos de total
+                  credibilidade Positiva. Recomendo!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Marcos dos Santos</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 6: Gabriela Campos Vaz -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Demonstrou ter muito conhecimento
+                  e
+                  experiência na área! Muito satisfeita com o trabalho da Dra. Gabriela! Profissional sem igual!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Gabriela Campos Vaz</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 7: Darcinei Sobral -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Com a Dra. Gabriela consegui tudo
+                  que
+                  busquei! Sou imensamente grata a ela pelo trabalho e cuidado que teve com meu processo. Recomendo a
+                  todos!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Darcinei Sobral</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 8: Rebeca Fernandes -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Dra. Gabriela é impecável do
+                  início ao
+                  fim! O cliente se sente acolhido, ouvido, a Dra. aplica o Direito com excelência. Extremamente
+                  atenciosa
+                  com os detalhes, que para essa profissão, faz toda a diferença! Com certeza, indico de olhos
+                  fechados."
+                </p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Rebeca Fernandes</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 9: Maria Eduarda de Rocco -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Dra Gabriela é uma profissional
+                  excepcional! Capacitada, dedicada e extremamante comprometida. Quem busca confiança, seriedade e uma
+                  profissional qualificada, indico mil vezes ela!!!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Maria Eduarda de Rocco</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 10: Laura Amanda -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Sempre me sinto muito bem acolhida
+                  e
+                  amparada quando preciso dos serviços da advogada Gabriela. Muito atenciosa em todos os passos, sempre
+                  explica direitinho e tira minhas dúvidas. Conduz os casos com diligência e competência!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Laura Amanda</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 11: Matheus Eduardo Telles Hass -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Excelente advogada! Me tratou
+                  muito
+                  bem e de forma muito eficaz."</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Matheus Eduardo Telles Hass</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
+            <!-- Card 12: Gustavo Pereira -->
+            <div
+              class="w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 snap-start bg-white p-8 shadow-card hover:shadow-elegant rounded-sm border-l-4 border-gold flex flex-col justify-between transition-all duration-300">
+              <div>
+                <div class="flex text-gold mb-4">
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed italic mb-6">"Excelente profissional! Serviço e
+                  atendimento de ótima qualidade!!"</p>
+              </div>
+              <div>
+                <div class="font-serif font-medium text-foreground text-base">– Gustavo Pereira</div>
+                <div class="text-xs text-stone">Cliente</div>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Seta Direita -->
+          <button id="next-depoimento"
+            class="absolute -right-2 sm:right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gold hover:text-white text-charcoal p-3 rounded-full shadow-lg border border-gray-100 transition-all duration-300 focus:outline-none cursor-pointer"
+            aria-label="Próxima Avaliação">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+          </button>
+
         </div>
+
       </div>
     </section>
 
