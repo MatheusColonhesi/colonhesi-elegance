@@ -1052,6 +1052,26 @@
       </svg>
     </div>
   </a>
+
+  <script>
+    // Funcionalidade de Navegação do Carrossel de Depoimentos
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('depoimentos-container');
+      const prevBtn = document.getElementById('prev-depoimento');
+      const nextBtn = document.getElementById('next-depoimento');
+
+      if (container && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+          container.scrollBy({left: -container.clientWidth, behavior: 'smooth'});
+        });
+
+        nextBtn.addEventListener('click', () => {
+          container.scrollBy({left: container.clientWidth, behavior: 'smooth'});
+        });
+      }
+    });
+  </script>
+
 </body>
 
 </html>
