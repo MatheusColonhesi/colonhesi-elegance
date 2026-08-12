@@ -672,82 +672,57 @@
     </div>
 
     <section id="contato" class="py-24 lg:py-32 bg-charcoal relative">
-      <div class="container mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          <div>
-            <span
-              class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">Contato</span>
-            <h2
-              class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-primary-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
-              Fale com a Especialista
-            </h2>
-            <div class="w-16 h-[1px] bg-gold mb-8 opacity-0 animate-fade-up animation-delay-400"></div>
-            <p class="text-stone-light text-lg leading-relaxed mb-12 opacity-0 animate-fade-up animation-delay-600">
-              Com a comodidade do atendimento online, você recebe atendimento especializado à distância de um clique.
-            </p>
+      <div class="container mx-auto px-6 lg:px-12 text-center">
 
-            <div class="grid sm:grid-cols-2 gap-8">
-              <div class="opacity-0 animate-fade-up" style="animation-delay: 0.5s;">
-                <i data-lucide="map-pin" class="h-6 w-6 text-gold mb-3"></i>
-                <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">Localização</h3>
-                <p class="text-stone-light text-sm">Atendimento Online em todo o Brasil</p>
-                <p class="text-stone-light text-sm">Presencial em Curitiba/PR</p>
-              </div>
-              <div class="opacity-0 animate-fade-up" style="animation-delay: 0.6s;">
-                <i data-lucide="phone" class="h-6 w-6 text-gold mb-3"></i>
-                <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">WhatsApp</h3>
-                <p class="text-stone-light text-sm">(41) 98529-2817</p>
-              </div>
-              <div class="opacity-0 animate-fade-up" style="animation-delay: 0.7s;">
-                <i data-lucide="mail" class="h-6 w-6 text-gold mb-3"></i>
-                <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">E-mail</h3>
-                <p class="text-stone-light text-sm">adv.gabrielacolonhesi@gmail.com</p>
-              </div>
-              <div class="opacity-0 animate-fade-up" style="animation-delay: 0.8s;">
-                <i data-lucide="clock" class="h-6 w-6 text-gold mb-3"></i>
-                <h3 class="font-serif text-lg font-medium text-primary-foreground mb-2">Atendimento</h3>
-                <p class="text-stone-light text-sm">Online e ágil</p>
-              </div>
+        <div class="max-w-3xl mx-auto">
+          <!-- Subtítulo -->
+          <span class="text-sm font-medium tracking-widest uppercase text-gold mb-4 block opacity-0 animate-fade-up">
+            Contato
+          </span>
+
+          <!-- Título Principal -->
+          <h2
+            class="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-primary-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
+            Fale com a Especialista
+          </h2>
+
+          <!-- Linha Dourada -->
+          <div class="w-16 h-[1px] bg-gold mx-auto mb-8 opacity-0 animate-fade-up animation-delay-400"></div>
+
+          <!-- Texto da Referência -->
+          <p
+            class="text-stone-light text-lg md:text-xl font-light leading-relaxed mb-10 opacity-0 animate-fade-up animation-delay-600">
+            Cada caso exige uma análise jurídica individualizada, conduzida com responsabilidade e sigilo profissional.
+          </p>
+
+          <!-- Botão de Atendimento -->
+          <div class="opacity-0 animate-fade-up animation-delay-800 mb-16">
+            <a href="https://wa.me/5541985292817" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-3 px-8 py-4 bg-gold hover:bg-gold-light text-charcoal font-medium tracking-widest uppercase text-sm transition-all duration-300 shadow-lg hover:shadow-xl rounded-sm">
+              INICIAR ATENDIMENTO
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
+          </div>
+
+          <!-- Informações de Apoio Limpas (Apenas Localização e WhatsApp) -->
+          <div
+            class="grid sm:grid-cols-2 gap-8 pt-12 border-t border-stone/20 max-w-xl mx-auto opacity-0 animate-fade-up"
+            style="animation-delay: 1s;">
+            <div class="flex flex-col items-center text-center">
+              <i data-lucide="map-pin" class="h-6 w-6 text-gold mb-3"></i>
+              <h3 class="font-serif text-lg font-medium text-primary-foreground mb-1">Localização</h3>
+              <p class="text-stone-light text-sm">Atendimento Online em todo o Brasil</p>
+              <p class="text-stone-light text-sm">Presencial em Curitiba/PR</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <i data-lucide="phone" class="h-6 w-6 text-gold mb-3"></i>
+              <h3 class="font-serif text-lg font-medium text-primary-foreground mb-1">WhatsApp</h3>
+              <p class="text-stone-light text-sm">(41) 98529-2817</p>
             </div>
           </div>
 
-          <div class="opacity-0 animate-slide-in-right" style="animation-delay: 0.4s;">
-            <form class="bg-charcoal-light/50 p-8 lg:p-10 border border-stone/20 shadow-2xl rounded-sm">
-              <h3 class="font-serif text-2xl text-primary-foreground mb-6">Envie sua mensagem</h3>
-
-              <div class="space-y-6">
-                <div>
-                  <label class="block text-sm font-medium text-stone-light mb-2">Seu Nome</label>
-                  <input type="text"
-                    class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors"
-                    placeholder="Digite seu nome" />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-stone-light mb-2">Seu E-mail</label>
-                  <input type="email"
-                    class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors"
-                    placeholder="seu@email.com" />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-stone-light mb-2">Seu Cel/WhatsApp (com DDD)</label>
-                  <input type="tel"
-                    class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors"
-                    placeholder="(41) 99999-9999" />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-stone-light mb-2">Mensagem</label>
-                  <textarea rows="4"
-                    class="w-full bg-transparent border-b border-stone/40 focus:border-gold py-3 text-primary-foreground placeholder:text-stone outline-none transition-colors resize-none"
-                    placeholder="Como podemos ajudar?"></textarea>
-                </div>
-                <button type="submit"
-                  class="w-full bg-gold hover:bg-gold-light text-charcoal font-medium py-4 tracking-wide transition-colors duration-300 shadow-lg">
-                  Enviar Mensagem
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
+
       </div>
     </section>
   </main>
