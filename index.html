@@ -457,7 +457,7 @@
     </div>
 
     <section id="clientes" class="py-24 lg:py-32 bg-worked-gray relative overflow-hidden">
-      <div class="container mx-auto px-4 lg:px-8">
+      <div class="container mx-auto px-2 sm:px-6">
 
         <!-- Cabeçalho -->
         <div class="text-center mb-16">
@@ -470,8 +470,8 @@
           <div class="w-16 h-[1px] bg-gold mx-auto opacity-0 animate-fade-up animation-delay-400"></div>
         </div>
 
-        <!-- Wrapper do Carrossel com Máscara e Botões -->
-        <div class="relative max-w-[1400px] mx-auto">
+        <!-- Wrapper do Carrossel com Espaçamento Externo para as Setas -->
+        <div class="relative max-w-[1440px] mx-auto px-4 sm:px-12">
 
           <!-- Gradiente Esmaecido - Esquerda -->
           <div
@@ -483,16 +483,16 @@
             class="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-worked-gray via-worked-gray/90 to-transparent z-10 pointer-events-none">
           </div>
 
-          <!-- Seta Esquerda -->
+          <!-- Seta Esquerda (Fora dos Cards) -->
           <button id="prev-depoimento"
-            class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gold hover:text-white text-charcoal p-3 rounded-full shadow-xl border border-gray-100 transition-all duration-300 focus:outline-none cursor-pointer"
+            class="absolute -left-1 sm:left-1 lg:-left-3 top-1/2 -translate-y-1/2 z-30 bg-white hover:bg-gold hover:text-white text-charcoal p-3 rounded-full shadow-xl border border-gray-100 transition-all duration-300 focus:outline-none cursor-pointer"
             aria-label="Avaliação Anterior">
             <i data-lucide="chevron-left" class="w-6 h-6"></i>
           </button>
 
           <!-- Container dos Cards -->
           <div id="depoimentos-container"
-            class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-6 px-12 sm:px-20"
+            class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-6 px-12 sm:px-24"
             style="scrollbar-width: none; -ms-overflow-style: none;">
 
             <!-- Card 1: Giovanna Luiza Andrade -->
@@ -763,9 +763,9 @@
 
           </div>
 
-          <!-- Seta Direita -->
+          <!-- Seta Direita (Fora dos Cards) -->
           <button id="next-depoimento"
-            class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gold hover:text-white text-charcoal p-3 rounded-full shadow-xl border border-gray-100 transition-all duration-300 focus:outline-none cursor-pointer"
+            class="absolute -right-1 sm:right-1 lg:-right-3 top-1/2 -translate-y-1/2 z-30 bg-white hover:bg-gold hover:text-white text-charcoal p-3 rounded-full shadow-xl border border-gray-100 transition-all duration-300 focus:outline-none cursor-pointer"
             aria-label="Próxima Avaliação">
             <i data-lucide="chevron-right" class="w-6 h-6"></i>
           </button>
